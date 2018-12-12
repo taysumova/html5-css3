@@ -33,7 +33,7 @@ header ul {
 }
 
 header li {
-    list-style-image: url(check%20icon.png);
+    list-style-image: url(img/plus_icon.png);
 }
 
 header img {
@@ -99,7 +99,7 @@ h2 {
 .product-pluses li {
     padding: 0 29px 25px 41px;
     list-style-type: none;
-    background: url(plus%20icon.png) no-repeat;
+    background: url(img/check_icon.png) no-repeat;
 }
 
 .scrinshots {
@@ -193,11 +193,8 @@ h2 {
 
 .buy .price-info {
     display: flex;
-    flex-flow: row wrap;
-    padding: 29px;
-    flex-basis: auto;
-    align-content: flex-end;
-    height: auto;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .price-info div {
@@ -262,6 +259,10 @@ footer {
     padding-bottom: 0;
 }
 
+footer h2 {
+    color: #fff;
+}
+
 footer div {
     margin-bottom: 50px;
     margin-top: 31px;
@@ -272,11 +273,62 @@ footer div {
 footer form {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     margin-right: 46px; 
+    width: 500px;
 }
 
-footer h2 {
-    color: #fff;
+footer input,
+.comment {
+    border-radius: 5px;
+    background-color:  #ffffff;
+    color:  #445162;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-bottom: 21px;
+    letter-spacing: 0.5px;
+}
+
+.comment {
+    height: 170px;
+    padding-top: 14px;
+    font-style: normal;
+    font-family: Arial;
+}
+
+footer input[type="submit"] {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    width: 140px;
+    height: 40px;
+    padding: 0;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+}
+footer span {
+    display: block;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 240px;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-start;
 }
 
 footer p {
