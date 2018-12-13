@@ -241,6 +241,7 @@ h2 {
 .price-info a {
     align-self: center;
     border-radius: 5px;
+    border: 3px solid transparent;
     background-color: #ffffff;
     width: 260px;
     height: 40px;
@@ -251,6 +252,12 @@ h2 {
     font-size: 18px;
     font-weight: 700;
     line-height: 42px;
+}
+
+.price-info a:hover {
+    border: 3px solid #fff;
+    background-color: #445161;
+    color: #fff;
 }
 
 footer {
@@ -307,7 +314,15 @@ footer input[type="submit"] {
     text-align: center;
     align-self: center;
     cursor: pointer;
+    border: 3px solid transparent;
 }
+
+footer input[type="submit"]:hover {
+    border: 3px solid #fff;
+    color: #fff;
+    background: #445162;
+}
+
 footer span {
     display: block;
 }
